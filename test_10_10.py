@@ -14,11 +14,12 @@ while 1:
     A_input = int(input("请选择:>1.攻击  2.恢复  3.逃跑"))
     #attack
     if A_input == 1:
-        if temp == 1:
+        if temp:
             M_h -= (0.5*A_a)
-        else:
             temp = 0
+        else:
             M_h -= A_a
+            temp = 0
     #recover
     elif A_input == 2:
         if A_h >= 60:
