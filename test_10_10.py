@@ -6,7 +6,6 @@ M_h = 100
 M_a = 20
 temp = 0
 
-
 while 1:
     print(f"Alice\tHP\t{A_h}\nMonster\tHP\t{M_h}")   
     print("\n")
@@ -17,8 +16,8 @@ while 1:
     if A_input == 1:
         if temp == 1:
             M_h -= (0.5*A_a)
-            temp -= 1
         else:
+            temp = 0
             M_h -= A_a
     #recover
     elif A_input == 2:
